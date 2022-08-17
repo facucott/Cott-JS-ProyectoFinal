@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Bienvenidos al sitio oficial de The Three Of Quarantine! Aquí podrán conocer la historia de la banda, su material audio-visual y todas las novedades acerca de los shows">
+    <meta name="keywords" content="thethreeofquarantineok, banda, argentina, musica, country, inicio">
+    <meta property="og:image" content="img/valija.png">
+    <link rel="sortcut icon" href="img/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="sass/estilo.css">
+    <title>T3OQ | Inicio</title>
+</head>
+<body>
+
+  <!-- header inicio -->
+
+  <header class="header">
+    <h1>T3OQ</h1>
+    <label for="menu-button" class="check"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="menu-button">
+    <nav class="nav">
+        <ul class="nav-item">
+            <li><a href="index.html" class="linkActive">Inicio</a></li>
+            <li><a href="pages/nosotros.html">Nosotros</a></li>
+            <li><a href="pages/musica.html">Música</a></li>
+
+              <li class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color:#d4bf97;">
+                <a href="#">Galería</a>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="pages/dama2.html">La Dama</a></li>
+                <li><a class="dropdown-item" href="pages/dama1.html">La Dama de Bollini</a></li>
+                <li><a class="dropdown-item" href="pages/eter.html">Éter Club</a></li>
+              </ul>
+
+            <li><a href="pages/fechas.html">Fechas</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><button type="button" class="btn btn-primary boton-ticket nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #000000;"><i class="fa-solid fa-ticket"></i></button></li>
+            <li><a href="pages/shop.html">Shop</a></li>
+            <li><button id="boton-carrito" type="button" class="btn btn-primary boton-ticket nav-item" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="background-color: #000000;"><i class="fa-solid fa-cart-shopping"></i><span id="contadorCarrito" style="color: #d4bf97">0</span></button></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- header fin -->
+
+  <!-- Modal inicio -->
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #000000;">
+      <div class="modal-header" style="color:#d4bf97;">
+        <h5 class="modal-title" id="exampleModalLabel">Sacá tus entradas para el próximo Show!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color:#d4bf97;">
+        <p>The Three Of Quarantine en "Vermu Social Clu"<br>
+        <br> 15 de julio, 22 hrs.-
+        <br> Paraguay 779.
+      </p>
+      </div>
+      <div class="modal-footer" style="color:#d4bf97;">
+        <button type="button" class="boton-modal" data-bs-dismiss="modal"><a href="https://alpogo.com/evento/157-the-three-of-quarantine-vermu-social-clu-7296" target="_blank">Alpogo.com</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal fin -->
+
+  
+      <!-- Modal Carrito -->
+
+      <!-- Modal carrito inicio-->
+
+      <div class="modal fade modal-contenedor" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content modal-carrito" style="background-color: #000000;">
+            <div class="modal-header card text-center" style="color:#d4bf97; background-color: #000000;">
+            <h5 class="modal-title" id="exampleModalLabel">Tu carrito contiene los siguientes productos:</h5><br>
+
+            <div id="carrito-contenedor">
+
+            </div>
+
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p><br>
+            <button id="vaciar-carrito" class="boton-agregar btn-comprar text-center boton-vaciar">Vaciar carrito</button>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color:#d4bf97;">
+            </div>
+            <div class="modal-footer" style="color:#d4bf97;">
+            <button id="myBtn" type="button" class="boton-modal" data-bs-dismiss="modal"><a href="#">Comprar</a></button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+    <!-- Modal carrito fin -->
+
+  <!-- portada inicio -->
+
+  <div class="carro d-flex justify-content-center">
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/portada1.jpg" class="d-block w-100" alt="portada 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/portada2.jpg" class="d-block w-100" alt="portada 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/portada3.jpg" class="d-block w-100" alt="portada 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+  <!-- portada fin -->
+
+  <!-- disco inicio -->
+
+  <div class="container-fluid">
+
+    <div class="row" style="background-color: #d4bf97;">
+
+      <div class="col-sm-12 col-md-6 disco2 d-flex justify-content-center align-items-center">
+        <div data-aos="zoom-in">
+          <h3>Nuevo disco <br> "Sinner, Preacher & Gambler" disponible!</h3><br>
+          <h4>Contiene 2 bonus tracks <br> (los clásicos "Burning Hell" y "Ghost Riders") <br> de actuaciones en vivo en 'Eter Club'</h4>
+          <br><br>
+          <h4 class="boton-escuchar"><a href="https://open.spotify.com/album/6tCJnOVv89uyrk9pHZSdrm" target="_blank">Escuchar</a></h4>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 disco d-flex justify-content-center align-items-center">
+        <div data-aos="zoom-in">
+          <a href="https://open.spotify.com/album/6tCJnOVv89uyrk9pHZSdrm" target="_blank"><img width="100%" src="img/disco.jpg" alt="tapa de disco"></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  <!-- disco fin -->
+
+  <!-- video inicio -->
+
+  <div class="container-fluid">
+
+    <div class="row" style="background-color: #000000;">
+
+      <div class="col-md-6 col-sm-12 video">
+        <div data-aos="zoom-in">
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/PD-4dj5SzOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 video2 d-flex justify-content-center align-items-center" style="color: #d4bf97;">
+        <div data-aos="zoom-in">
+          <h3>Escuchá nuestro nuevo cover en vivo <br> del clásico de Elvis <br> <a href="https://www.youtube.com/watch?v=PD-4dj5SzOg" target="_blank"><br> <strong>"You're right, I'm left, she's gone"</strong></a>, <br><br> en 'La Dama De Bollini'</h3>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  <!-- video fin -->
+
+  <!-- footer inicio -->
+
+  <div class="container-fluid">
+
+  <div class="footer row row-cols-1 row-cols-md-3" style="background-color: #d4bf97;">
+    
+    <div class="footer-logos col-mb-4">
+      
+        <a href="https://www.youtube.com/channel/UClwf_6itnucFmO89txe_Mow" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/losquarantineok/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://open.spotify.com/artist/1ADAzs1eow9RrQHMWYH6HS" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+    </div>
+
+    <div class="footer-copyright col-mb-4">
+        <h6>
+            © the three of quarantine, 2022 - todos los derechos reservados 
+        </h6>
+    </div>
+        
+    <div class="float-right col-mb-4">
+      <h6 class="boton-subir"><a href="#">Subir</a></h6>
+    </div>
+
+</div>
+</div>
+
+<!-- footer fin -->
+
+
+    <!-- fonteawesome/aos -->
+
+    <script src="https://kit.fontawesome.com/4bf6ffe6f6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      </script>
+
+    <!-- bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/carrito.js"></script>
+
+</body>
+</html>
