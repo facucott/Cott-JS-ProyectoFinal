@@ -44,7 +44,7 @@ botonVaciar.addEventListener('click', () => {
 
 const lista = document.querySelector('#contenedor-productos')
 
-fetch('productos.json')
+fetch('../json/productos.json')
     .then( (resp) => resp.json() )
     .then( (data) => {
 
