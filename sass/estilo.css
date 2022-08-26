@@ -770,4 +770,10 @@ body {
     left: 0;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .galeria-shop {
+    width: 50vw;
+  }
+}
 /*# sourceMappingURL=estilo.css.map */
